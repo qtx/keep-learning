@@ -1,0 +1,40 @@
+PowerShell包含多种类型的可执行命令
+    Cmdlet (PowerShell独有概念)
+    函数
+    工作流
+更通用的可执行工具可以用Command来描述
+
+
+可更新的帮助系统（必须以管理员身份运行)：
+在线更新：
+Update-Help
+中文区域更新可能有问题，可以忽略
+Update-Help -ErrorAction SilentlyContinue
+
+离线：
+Save-Help 下载到本地帮助文档
+Update-Help -SourcePath 本地帮助文档路径
+
+
+Get-Help 是Cmdlet命令
+Help是对Cmdlet封装后的函数
+    分页显示帮助内容
+
+
+参数-Name 可以省略
+支持通配符*
+例如：
+help *log*
+
+可以使用Get-Command搜索Cmdlet命令 别名Gcm
+
+名词：
+Get-Command -Noun
+动词：
+Get-Command -Verb Get
+
+Cmdlet 一般格式 "动词-名词"
+
+
+2.帮助详解:
+    

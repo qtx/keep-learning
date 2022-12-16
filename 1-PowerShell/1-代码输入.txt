@@ -1,0 +1,13 @@
+1.Tab键补全
+    输入"Get-S" 按一下Tab显示已输入命令开头的所有命令，Shift+Tab反向显示
+    输入"Dir C:\" 按TAB遍历当前文件夹下文件+文件夹名
+    输入"Set-ExecutionPolicy -" 按Tab，循环显示命名所有参数
+    输入"Set-ExecutionPolicy -ExecutionPolicy " 按Tab，循环显示预设可用值
+
+PowerShell ISE 补齐提示更全(有下拉列表)
+
+2.查看PowerShell版本
+输入:$PSVersionTable
+
+可以通过
+PowerShell.exe -version 2.0 显式指定运行v2版本
