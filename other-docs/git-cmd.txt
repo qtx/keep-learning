@@ -1,0 +1,20 @@
+#1.设置邮箱
+git config --local user.email qtx.git@gmail.com
+#2.设置用户名
+git config --local user.name qtx
+#3.core.autocrlf设置成true表示：提交时转换为LF，检出时转换为CRLF，
+git config --local core.autocrlf true
+#4.日志日期格式：iso，例如2023-04-09 23:38:16 +0800
+git config --global log.date iso
+
+#修改指定github.com连接时的ssh私钥文件：
+vim ~/.ssh/config
+```
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/github_rsa
+    PreferredAuthentications publickey
+    User git
+```
+
+ssh-keygen.exe -C "qtx.git@gmail.com" -f ""

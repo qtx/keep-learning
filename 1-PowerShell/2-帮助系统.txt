@@ -20,6 +20,16 @@ Get-Help 是Cmdlet命令
 Help是对Cmdlet封装后的函数
     分页显示帮助内容
 
+Get-Help <命令>
+Help <命令>
+<命令> -?
+    若要查看示例，请键入: "get-help <命令> -examples".
+    有关详细信息，请键入: "get-help <命令> -detailed".
+    若要获取技术信息，请键入: "get-help <命令> -full".
+    有关在线帮助，请键入: "get-help <命令> -online"
+
+get-help <命令> -ShowWindow 在小窗口显示帮助信息
+
 
 参数-Name 可以省略
 支持通配符*
@@ -38,3 +48,13 @@ Cmdlet 一般格式 "动词-名词"
 
 2.帮助详解:
     
+参数集+通用参数
+
+    通用参数<CommonParameters>
+
+可选&必选
+    参数放到方括号[]中，代表可选
+
+http://co4pro.com/
+
+防火墙设置开放了 443，80，22端口
