@@ -14,6 +14,7 @@ read -p "==>3.准备提交代码，请输入备注: " remark
 git commit -m "${remark}"
 
 echo -e "\n==>4.开始push到远程库："
+setproxy
 git push
 echo ""
 git status
