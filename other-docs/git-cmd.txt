@@ -17,4 +17,4 @@ Host github.com
     User git
 ```
 
-ssh-keygen.exe -C "qtx.git@gmail.com" -f ""
+ssh-keygen.exe -C "qtx.git@gmail.com" -f "github_rsa"
