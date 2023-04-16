@@ -1,0 +1,11 @@
+var duraList=document.querySelectorAll("#multi_page .duration");
+var sum=0;
+for(var i=0;i<duraList.length;i++){
+    var duras=duraList[i].innerHTML.trim().split(":")
+    sum+=(parseInt(duras[0])*60+parseInt(duras[1]));
+}
+var hour=Math.floor(sum/60/60);
+var minute=Math.floor(sum/60)%60;
+var second=sum%60;
+clear()
+console.log(`视频合集总时长==> ${hour}:${minute}:${second}`)
