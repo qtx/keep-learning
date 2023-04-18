@@ -138,7 +138,66 @@ table嵌套tr(行),
 删除多的单元格
 注意：不能跨结构单元格合并
 
+表单：
+作用收集用户信息
+
+input
+type
+    text
+    password
+    radio
+    checkbox
+    file
+
+占位文本：提示信息
+
+placeholder="提示信息"
+
+单选，多选默认是checked
+
+下拉菜单 <select>
+        <option><option>
+        </select>
+
+文本域
+textarea
+
+label标签：
+1、只包裹内容，不包裹表单控件
+    for属性和表单控件
+2、直接包裹控件
+
+按钮标签
+button
+    type 
+        submit 默认 提交数据到后台
+        reset  将表单恢复默认值
+        button  配合js使用
 
 
 
-学习进度：20/145
+无语义的布局标签 
+div 独占一整行的 标签  大盒子
+span 不换行的布局标签  小盒子
+
+
+字符实体：
+在网页中显示预留字符：
+空格 &nbsp;
+小于 &lt;
+大于 &gt;
+在代码中敲键盘空格，网页只识别一个
+
+准备css:
+层叠样式表：cascading style sheets
+
+<style>
+/* 选择器 {} */
+p {
+    /*css 属性*/
+}
+</style>
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=31
+
+学习进度：30/145
