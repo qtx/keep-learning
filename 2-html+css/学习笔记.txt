@@ -241,7 +241,13 @@ background-color 背景色
         行高测量：从一行文字顶端到下一行字文件的顶端
     垂直居中技巧：
         行高属性值等于盒子高度属性值
-字体族
+字体族 font-family
+    属性值：字体名 如：
+        font-family: 楷体;
+    多个字体名逗号分隔，浏览器依次查找，找到就立即用；没找到就用默认
+    font-family 属性最最后设置一个字体族名，
+        网页开发建议使用无衬线字体, 如：sans-serif;
+        
 字体复合属性
 文本缩进
 文本对齐
@@ -249,5 +255,6 @@ background-color 背景色
 文字颜色
 
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=34
-学习进度：31/145
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=38
+学习进度：37/145
