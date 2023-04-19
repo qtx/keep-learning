@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体</title>
+    <style>
+        /* 经验：chrome浏览器文字默认大小16px */
+        p.fs {
+            /* 文字大小font-size属性必须有单位，否则属性不生效 */
+            font-size: 30px;
+        }
+
+        h3.fw{
+            /* 默认粗细 */
+            font-weight: 400; 
+        }
+        div.fw{
+            /* 加粗 */
+            font-weight: 700; 
+        }
+
+        em.fst{
+            /* 正常，不倾斜 */
+            font-style: normal; 
+        }
+        div.fst{
+            /* 倾斜效果 */
+            font-style: italic;
+        }
+
+
+        p.lh{
+            /* line-height: 30px; */
+            /* 只有数字时，行高是font-size属性值的倍数 */
+            line-height: 2;
+        }
+
+        div.lhc{
+            height: 100px;
+            background-color: skyblue;
+            line-height: 100px; /* 文字垂直居中，只适用于单行文字 */
+        }
+
+    </style>
+</head>
+<body>
+    <p class="fs" >测试字体大小</p>
+    <div>测试默认字体大小</div>
+    <hr>
+    <h3 class="fw" >h3测试字体粗细</h3>
+    <div class="fw" >div测试字体粗细</div>
+    <hr>
+    
+    <em class="fst" >em标签风格</em>
+    <div class="fst" >div标签风格</div>
+    
+    <hr>
+    <p class="lh">4月19日下午，国家主席习近平在人民大会堂同来华进行国事访问的加蓬总统邦戈举行会谈。习近平强调，明年我们将迎来中加建交50周年。半个世纪来，在两国几代领导人关心引领下，中加友好始终坚如磐石。面对当前世界大变局，中加相互支持，维护了两国共同利益和国际公平正义。深入、持续推进中加关系不仅符合两国共同和长远利益，也对推动构建人类命运共同体有重要示范作用。我提议将两国全面合作伙伴关系提升为“全面战略合作伙伴关系”。</p>
+
+    <hr>
+    <div class="lhc">div文字</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+1. `ctrl`+`,`  打开用户设置
+2. `ctrl`+`k`  `ctrl`+`s` 显示快捷按键设置
+3. `ctrl`+`r` 切换工作区
+4. `alt`+`z`  自动换行切换
+5. `ctrl`+`g` 抓到指定行
+6. ctrl+p 转到文件
+7. F8 转到下一个错误或警告
+    shift+F8转到上一个
+8. ctrl+tab切换tab
+9.shift+alt+I 在选定的每行末尾插入关闭
+10. ctrl+L 选择当前行
+11. ctrl+shift+L 选择所有出现的当前选择文本
+12. ctrl+F2 选择所有出现的当前单词
+13. ctrl+ shift+ space 触发参数提示
+14. shift+alt+f 格式化文档
+15.ctrl+k ctrl+F 格式化选择的代码
+
+16.F2转到定义
+17.Alt+F12查看定义
+18.F2 重命名变量
+19.Ctrl+k ctrl+x 删除尾部空格
+20.Ctrl+K R 在资源管理器中显示活动文件
+
+21.ctrl+shift+H 所有文件批量替换
+22. ctrl+k v 右侧打开 markdown
+23.ctrl+k z进而zen模式

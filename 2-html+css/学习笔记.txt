@@ -198,6 +198,56 @@ p {
 }
 </style>
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=31
+css引入方式：
+1.内部样式表<style></style>
+2.外部样式表<link rel="stylesheet" href="*.css">
+3.行内样式：配合<TAGNAME style="color:red">
 
-学习进度：30/145
+font-size:16px
+
+选择器：
+标签选择器
+    标签名
+类选择器
+    .类名
+    标签属性class="类名"
+    一个类选择器可以给多个标签使用
+    一个标签可以使用多个类名 ，多个类名用空格隔开放到class属性里
+    类名 要见名知意 
+id选择器
+    一般配合js使用
+    #id名
+    标签属性id="id名"
+    规则，同一个id在一个页面只用一次
+通配符选择器
+    * 查找所有标签，设置相同样式
+        开发初期，清除标签默认样式
+
+属性：
+width 宽 单位px
+height 高 单位px
+background-color 背景色 
+
+
+文字修饰属性：
+字体大小    font-size
+字体粗 font-weight
+字体倾斜    font-sytle
+文字行高    设置多行文本间距 
+    line-height 
+        数字+px 具体像素
+        只有数字 表示： font-size属性值的倍数
+    行高 是 上间距+文本高度+下间距
+        行高测量：从一行文字顶端到下一行字文件的顶端
+    垂直居中技巧：
+        行高属性值等于盒子高度属性值
+字体族
+字体复合属性
+文本缩进
+文本对齐
+文字修饰线
+文字颜色
+
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=34
+学习进度：31/145
