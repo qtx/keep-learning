@@ -43,6 +43,58 @@
             line-height: 100px; /* 文字垂直居中，只适用于单行文字 */
         }
 
+
+        div.fo{
+            /* 文字倾斜 文字加粗  字体大小 行高 字体 */
+            /* font: italic 700 30px/2 楷体; */
+
+            /* 字号和字体值必须写，否则font属性不生效 */
+            font:  30px 楷体;
+        }
+
+        p.ti {
+            text-indent: 2em; /*首行缩进2个字*/
+            font-size: 30px;
+        }
+
+        h1.ta {
+            /*居中的是文字的内容，不是标签*/
+            text-align: center;
+           /* text-align: left; /*左对齐（默认）*/
+            /*text-align: right; /*右对齐*/
+        }
+        /* 图片居中也用text-align */
+        div.ta {
+            text-align: center;
+        }
+
+        /* none            去除下划线 */
+        a.td {
+            text-decoration: none;
+        }
+        /* underline       下划线 */
+        div.td {
+            text-decoration:underline;
+        }
+        /* line-through    删除线 */
+        p.td{
+            text-decoration: line-through;
+        }
+        /* overline        上划线 */
+        span.td{
+            text-decoration: overline;
+        }
+
+            
+    h1.co {
+        background-color:aqua;
+        /* color:red; */
+        /*  color:rgb(0,255,0); */
+        /* color:rgba(0,0,0,0.5); */
+        /* color: #0000FF; */
+        color: #00f; 
+    }
+
     </style>
 </head>
 <body>
@@ -61,5 +113,29 @@
 
     <hr>
     <div class="lhc">div文字</div>
+
+    <hr>
+    <div class="fo">测试font属性</div>
+
+    
+    <hr>
+    <p class="ti">4月19日下午，国家主席习近平在人民大会堂同来华进行国事访问的加蓬总统邦戈举行会谈。习近平强调，明年我们将迎来中加建交50周年。半个世纪来，在两国几代领导人关心引领下，中加友好始终坚如磐石。面对当前世界大变局，中加相互支持，维护了两国共同利益和国际公平正义。深入、持续推进中加关系不仅符合两国共同和长远利益，也对推动构建人类命运共同体有重要示范作用。我提议将两国全面合作伙伴关系提升为“全面战略合作伙伴关系”。</p>
+
+    
+    <hr>
+    <h1 class="ta">标题文字</h1>
+    <div class="ta"><img src="cat.webp" alt=""></div>
+
+
+
+    <hr>
+    <a href="#" class="td">a标签，去掉下划线</a>
+    <div  class="td">div标签，添加下划线</div>
+    <p  class="td">p标签，添加删除线</p>
+    <span  class="td">span标签，添加上/顶划线</span>
+
+    <hr>
+    <h1 class="co">h1标签测试颜色</h1>
+
 </body>
 </html>

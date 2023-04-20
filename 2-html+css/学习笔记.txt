@@ -249,12 +249,43 @@ background-color 背景色
         网页开发建议使用无衬线字体, 如：sans-serif;
         
 字体复合属性
+    font ，属性的简写方式，一个属性对应多个值，多个属性值之间用空格隔开。
+    font: <是否倾斜> <是否加粗> 字号/行高 字体 （必须按顺序书写)
+    font: italic 700 30px/2 楷体
+    注意：字号和字体值必须写，否则font属性不生效
+
 文本缩进
+    text-indent  
+        数字+px 
+        数字+em (1em=当前标签的字号的大小)  常用
 文本对齐
+    text-align
+        left   左对齐（默认）
+        center 居中对齐
+        right  右对齐
+        居中的是文字的内容，不是标签
+        也可以使图片内容居中
 文字修饰线
+    text-decoration
+        none            去除下划线
+        underline       下划线
+        line-through    删除线
+        overline        上划线
+
 文字颜色
+    color:
+    颜色表示方式   属性值        说明               使用场景
+    颜色关键字     英文单词      red,green,blue... 学习，测试
+    rgb表示法     rgb(r,g,b)    rgb三原色         了解
+    rgba表示      rgba(r,g,b,a)   a是透明度0~!     开发使用
+    16进制        #RRGGBB       #000000，简写#000,#fc0     开发使用
 
+调试工具：chrome浏览器
+1.打开调试工具  ：鼠标键 检查  ；  F12
 
+2细节：
+    如果测错误属性，有黄色叹号
+    css属性的签名有多选框，没勾选表示不生效
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=38
-学习进度：37/145
+https://www.bilibili.com/video/BV1kM4y127Li?p=42
+学习进度：41/145
