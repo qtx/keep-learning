@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .exmaple1  {
+            font-size:30px;
+            color:red;
+            font-weight:700;
+        }
+    </style>
+    <style>
+        .exmaple2 div {
+            color:red;
+            font-weight:700;
+        }
+        .exmaple2 div {
+            color:green; /* 后面的属性会覆盖签名的同名属性*/
+            font-size:30px;
+        }
+    </style>
+    <style>
+        .exmaple3 div {
+            color:red;
+            font-weight:700;
+        }
+        .exmaple3 div {
+            color:green; /* 后面的属性会覆盖签名的同名属性*/
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="exmaple1">
+        <div>div标签</div>
+        <p>p标签</p>
+        <span>span标签</span> <br>
+        <!-- 当标签有自己的样式，则自己的样式生效，不继承 -->
+        <a href="#">a标签</a>
+        <h1>h1标签</h1>
+        <hr>
+    </div>
+
+    <div class="exmaple2">
+        <div>div标签</div>
+        <hr>
+    </div>
+
+    <div class="exmaple3">
+        <div class="box">div标签</div>
+        <hr>
+    </div>
+</body>
+</html>

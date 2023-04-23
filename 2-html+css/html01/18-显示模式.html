@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        .d1{
+            background-color: aqua;
+        }
+        .d2{
+            background-color:aquamarine;
+        }
+        /* 块级元素 */
+        /* 1.独占一行 2.宽度默认是父级的100% 3.添加“宽高”属性生效 */
+        div{
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 行内元素 */
+        /* 1.一行可共存多个，2.尺寸由内容撑开 3.加宽高不生效！ */
+        span{
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 行内块元素 */
+        /* 1.一行可共存多个 2.默认尺寸由内容撑开 3.宽高属性生效 */
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d1">这是一个div1</div>
+    <div class="d2">这是一个div2</div>
+
+    
+    <span class="d1">这是一个span1</span>
+    <span class="d2">这是一个span2</span>
+
+    <img class="d1" src="cat2.jpg">
+    <img class="d2" src="cat2.jpg">
+</body>
+</html>

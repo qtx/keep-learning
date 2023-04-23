@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css特性-优先级</title>
+    <style>
+        body{
+            font-size: 50px;
+            font-weight: 700px;
+        }
+
+        /* 优先级：
+        继承样式< 通配符选择器 < 标签选择器 < 类选择器 < id选择器 <行内样式 <!important 
+            记忆技巧：
+            选择器选中标签的范围越大，优先级越低
+        */
+        #test{
+            color: orange;
+        }
+        .box {
+            color: blue ;
+        }
+        div {
+            color:green ;
+        }
+        /* 
+            !important 可以提高权重，在属性后 分号前
+            注意：!important加在父级上，对子级子级标签优先级不影响
+        */
+        * {
+            color:red !important; 
+        }
+        span{
+            color: gray ; 
+        }
+        
+    </style>
+</head>
+<body>
+    <span>
+        <div class="box" id="test" style="color:purple ">div标签1</div>
+        <div class="box" id="test" >div标签2</div>
+    </span>
+
+
+
+ </body>
+</html>
