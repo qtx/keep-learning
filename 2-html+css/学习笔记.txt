@@ -436,9 +436,19 @@ display
 属性值：block 块级 inline-block 行内块  inline行内
 
 
+综合案例
+/*默认效果*/
+a{}
+/*悬停按钮*/
+a{}
 
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=52
-学习进度：51/145
+
+
+
+
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=53
+学习进度：52/145
 
 
