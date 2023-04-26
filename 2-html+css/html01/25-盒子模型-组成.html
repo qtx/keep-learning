@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-组成</title>
     <style>
-
-        div{
+        div.ex1 {
             height: 200px;
             width: 200px;
             background-color: pink;
@@ -15,9 +15,78 @@
             border: 1px solid #000;
             margin: 50px;
         }
+
+
+
+        div.ex2 {
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+
+            border-top: 1px solid red;
+            border-left: 2px dashed green;
+            border-bottom: 3px dotted yellow;
+            border-right: 4px double blue;
+
+        }
+
+
+        div.ex3 {
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+
+        }
+
+        div.ex4 {
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+
+            padding: 20px;
+            /* 内减模式，盒子最终尺寸 为设置尺寸 */
+            box-sizing: border-box;
+
+        }
+
+        div.ex5 {
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+
+
+            /* padding-top: 10px; */
+            /* padding-right:20px; */
+            /* padding-bottom: 30px; */
+            /* padding-left: 40px; */
+
+            
+            /* margin: 50px; */
+            /* margin: 60px 70px; */
+            /* margin: 80px 90px 100px ; */
+            margin: 80px 90px 100px 110px;
+
+        }
     </style>
 </head>
+
 <body>
-    <div>div标签</div>
+    <div class="ex1">div标签1</div>
+    <hr>
+    <div class="ex2">div标签2</div>
+    <hr>
+    <div class="ex3">div标签3</div>
+    <hr>
+    <div class="ex4">div标签4</div>
+    <hr>
+    <div class="ex5">内存内容</div>
+    <hr>
+
 </body>
+
 </html>

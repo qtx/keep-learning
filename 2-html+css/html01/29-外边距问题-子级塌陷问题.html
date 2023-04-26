@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距问题-子级塌陷问题</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            box-sizing: border-box;
+            
+            /* 解决办法：
+                1.规避问题：取消子级margin,父级设置padding */
+            /* padding: 1px; */
+
+            /* 
+                2.父级设置overflow：hiddden
+                让浏览找到父级盒子的正确边缘 
+            */
+            /* overflow: hidden;  */
+
+            /* 3.父级设置border-top */
+            border-top: 1px solid pink;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+            /* 子级添加上外边距,会让父级一起向下走*/
+            margin-top: 50px; 
+            /* 左边距不会 */
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="one">
+        <div class="two">222</div>
+    </div>
+    
+</body>
+</html>

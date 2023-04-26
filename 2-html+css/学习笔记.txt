@@ -489,12 +489,108 @@ PxCook（像素大厨） 切图设计工具软件
 作用：布局网页，摆放盒子和内容
 
 内容区域-width&height 内容域盒子边缘之间
-内边距-border (bd)
+边块线-border (bd)
+内边距-padding
 外边距 - margin 盒子外面
 
 
+盒子模型-边框
+border: 1px solid #000; //四个方向一起设置
+    粗细 实虚样式 颜色
+solid 实线
+dashed 虚线
+dotted 点线
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=59
-学习进度：58/145
+border-top    bdt
+border-right    bdr
+border-bottom   bdb
+border-left     bdl
+
+内边距
+padding:30px; //四方向一起设置
+padding:10px 80px；//上下  右左
+padding:10px 40px 80p; //上  右左  下
+padding:10px 20px 40px 80px; //上 右 下 左
+
+padding-top   
+padding-right 
+padding-bottom
+padding-left  
+
+问题：
+给盒子加border/padding会撑大盒子
+即：
+盒子尺寸=内容尺寸+border尺寸+内边距尺寸
+
+解决：
+内减模式：box-sizing:border-box
+
+
+外边距：
+属性名：margin
+写法和padding相同
+外边距不会撑大盒子
+
+版心水平居中：
+margin:0 auto 计算原则：
+(父级宽度-盒子宽度)/2
+
+盒子版心居中要求：盒子要设置宽度
+
+清除默认样式：
+比如：默认的内外边距
+
+* {
+    margin:0;
+    padding:0;
+    //一般直接加內减模式
+    box-sizing:border-box
+    
+}
+有默认样式的标签并集 {
+    margin:0;
+    padding:0;
+}
+
+body h1 p li 都有默认的内外边距
+
+去掉列表的项目符号：
+li {
+    list-style:none;
+}
+
+
+盒子模型--元素溢出
+作用：控制溢出元素的内容显示方式
+属性名：overflow
+属性值：
+hidden 溢出隐藏
+scroll 溢出滚动(滚动条一只显示)
+auto   溢出滚动（溢出才显示滚动条位置）
+
+
+外边距问题-合并现象
+场景：垂直排列的兄弟元素，上下margin合并
+现象：取两个margin中较大值生效
+
+外边距问题-子级塌陷问题
+场景：父子级标签，子级的添加上外边距会产生塌陷问题
+现象：导致父级一起向下移动
+
+解决办法：
+1.规避问题：取消子级margin,父级设置padding
+2.父级设置overflow：hiddden
+3.父级设置border-top
+
+
+行内元素-垂直内外边距问题
+场景：行内元素如<span>添加margin和paddign，无法改变元素垂直位置 (不改变display时）
+解决方法：
+给行内元素添加line-height可以改变垂直位置
+
+
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=67
+学习进度：66/145
 
 
