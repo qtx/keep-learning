@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-圆角</title>
+    <style>
+
+        div.ex1{
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* 四个角同时生效 */
+            /* border-radius: 20px; */
+
+            /* 四个值：左上 右上 右下 左下 */
+            /* border-radius: 10px 20px 40px 80px; */
+
+            /* 三个值：左上 右上+左下  右下 */
+            /* border-radius: 10px  40px 80px; */
+
+            /* 两个值：左上+右下 右上+左下 */
+            border-radius: 10px  40px
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+
+            border-radius: 50%;
+        }
+        div.ex2{
+            width: 200px;
+            height: 80px;
+            background-color: orange;
+
+            border-radius: 40px; /*设为高度一半*/
+        }
+    </style>
+</head>
+<body>
+    <div class="ex1"></div>
+    <hr>
+    正圆形：
+    <img src="cat2.jpg" alt="">
+    <hr>
+    <div class="ex2">胶囊形</div>
+</body>
+</html>
