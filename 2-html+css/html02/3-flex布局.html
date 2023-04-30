@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-flex布局</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            border: 1px solid #000;
+            height: 300px;
+            display: flex;
+
+            /*flex-start      默认值，从起点开始依次排列*/
+            /* justify-content:flex-start;  */
+
+            /* flex-end        弹性盒子从终点开始依次排列 */
+            /* justify-content:flex-end;  */
+
+            /* center          弹性盒子延主轴居中排列 */
+            /* justify-content:center; */
+
+            /* space-between   盒子沿主轴均匀排列，空白间距均匀分在弹性盒子之间 */
+            /* justify-content:space-between; */
+
+            /* space-around    盒子沿主轴均匀排列，空白间距均匀分在弹性盒子两侧 */
+            /* justify-content:space-around; */
+
+            /* space-evenly    盒子沿主轴均匀排列，弹性盒子之间与容器之间间距相等， */
+            /* justify-content:space-evenly; */
+
+            
+            /* stretch     弹性盒子沿着侧轴线被拉伸至铺满容器（弹性盒子没设侧轴尺寸时默认拉伸） */
+            /* 没有设置设置侧轴长度时，才拉伸生效 */
+            /* align-items:stretch; */
+
+            /* center      弹性盒子沿侧轴居中排列 */
+            align-items:center;
+           
+            /* row  水平方向，从左向右（默认） */
+            flex-direction:row;
+
+            /* column  垂直方向，从上向下 */
+            /* flex-direction:column; */
+
+            /* row-reverse 水平方向，从右向左 */
+            /* flex-direction:row-reverse; */
+
+            /* cloumn-reverse  垂直方向，从下向上 */
+            /* flex-direction:column-reverse; */
+
+            
+        }
+        .box div{
+            border: 1px dashed red;
+            /* 弹性伸缩比：整数数字，表示占用父*剩余*尺寸的“份数” */
+            flex: 1;
+            height: 200px;
+            background-color: lightblue;
+        }
+        .box div:nth-child(3n+1){
+            /* flex-start  弹性盒子从起点开始依次排列 */
+            align-self: flex-start;
+            flex: 2;
+        }
+        .box div:nth-child(3n+2){
+            /* flex-end    弹性盒子从终点开始依次排列 */
+            align-self: flex-end;
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>

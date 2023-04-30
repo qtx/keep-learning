@@ -716,10 +716,88 @@ flex模型不会产生脱标，布局网页更简单灵活
 display:flex;
 justify-content:space-between;
 
+flex-组成：
+设置方式：给父元素设置：display:flex;子元素可以自动挤压或拉伸
+
+组成部分：
+弹性容器 父元素
+弹性盒子 子元素
+主轴：默认在水平方向
+侧轴/交叉轴：默认子啊垂直方向 
+
+默认特点：弹性盒子：演着主轴方向排列
+
+main axis main-size
+--------->
+main-start [flex item] [flex item] ... main-end
+| cross-start
+| cross size
+| 
+v cross-end
+cross axis 
+
+flex布局：
+1.创建flex容器：display:flex
+2.主轴对齐方式调整： justify-content
+3.侧轴对齐方式调整：align-items
+4.某个弹性盒子侧轴对齐方式： align-self
+5.修改注册方向：flex-direction
+6.弹性伸缩比： flex
+7.弹性盒子换行： flex-wrap
+8.行对齐方式：align-content
 
 
+1.主轴对齐方式：justify-content:
+flex-start      默认值，从起点开始依次排列
+flex-end        弹性盒子从终点开始依次排列
+center          弹性盒子延主轴居中排列
+space-between   盒子沿主轴均匀排列，空白间距均匀分在弹性盒子之间
+space-around    盒子沿主轴均匀排列，空白间距均匀分在弹性盒子两侧
+space-evenly    盒子沿主轴均匀排列，弹性盒子之间与容器之间间距相等，
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=75
-学习进度：74/145
+2.侧轴对齐方式：
+属性名：
+align-items: 设置在容器上,作用于全部盒子的侧轴对齐方式
+align-self: 设置在盒子上，作用当前盒子的侧轴对齐方式
+
+stretch     弹性盒子沿着侧轴线被拉伸至铺满容器（弹性盒子没设侧轴尺寸时默认拉伸）
+center      弹性盒子沿侧轴居中排列
+flex-start  弹性盒子从起点开始依次排列
+flex-end    弹性盒子从终点开始依次排列
+
+
+修改主轴方向：
+主轴默认水平方向，侧轴默认在垂直方向
+属性名：flex-direction
+值：
+row  水平方向，从左向右（默认）
+column  垂直方向，从上向下
+row-reverse 水平方向，从右向左
+cloumn-reverse  垂直方向，从下向上
+
+
+弹性伸缩比：
+作用：控制弹性盒子的注重方向的尺寸
+属性名flex
+属性值：整数数字，表示占用父*剩余*尺寸的“份数”
+
+默认情况(不设宽高时)下：主轴方向尺寸靠内容撑开，侧轴默认拉伸
+
+
+换行问题：
+弹性盒子可以自动挤压或拉伸，
+    默认情况下：所有弹性盒子都在一行显示
+属性名：flex-wrap
+属性值：
+wrap 换行
+nowrap 不换行（默认）
+
+行对齐方式：
+align-content:
+属性值：和主轴对齐方式一样
+
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=81
+学习进度：80/172
 
 
