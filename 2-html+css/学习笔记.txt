@@ -800,7 +800,50 @@ align-content:
 
 
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=83
-学习进度：82/172
+网页制作：
+
+项目目录:
+网站根目录，包含所有素材
+
+根目录-study
+images  固定使用图片
+uploads 
+css/
+    base.css    基础公共样式，设置基本样式
+    index.css   首页css样式
+index.html  首页Html文件
+
+link标签引入css文件
+
+logo功能：
+1.单击跳转到首页
+2.搜索引擎优化：提升网站百度搜索排名
+实现方法：
+标签结构：h1>a>网站名称(搜索关键字)
+.logo a{
+    display:block;
+    width:
+    height:
+    background-image:url(...)
+    font-size:0; /*字体大小为0：隐藏文字*/
+}
+
+导航制作技巧：
+导航功能：
+单击跳转页面
+实现方法：
+标签接结构：ul>li*3>a
+优势：比吗堆砌a标签，网站搜索排名降级
+
+搜索区域（search)
+标签结构：.search>input+a/button
+
+用户区域(user)
+实现方法：
+.user>a>img+span
+
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=90
+学习进度：89/172
 
 
