@@ -843,7 +843,59 @@ logo功能：
 .user>a>img+span
 
 
-https://www.bilibili.com/video/BV1kM4y127Li?p=90
-学习进度：89/172
+banner区域布局：
+结构：通栏banner>版心>.left+.right
+
+左侧测导航.left
+.left>ul>li*9>a
+    a默认背景图白色右箭头
+        hover：蓝色文字加蓝色箭头
+
+右侧课程表：
+.right>h3+.content
+
+内容：
+.content> (dt+ dd>(span+-+strong) )*3 +a
+
+a标签要display:block
+
+
+精品推荐 recommend
+.recommend> h3 + ul>(li>a)*9 +a.modify
+布局思路flex
+
+.recommend ul li:last-child a //最后一个li的a去掉右边框
+
+
+
+精品课程区 .course
+.hd+.bd
+盒子模型
+
+.hd> (h3+a.more)
+
+.bd>ul>li*10
+
+li>a>.pic+.text
+
+.pic>img
+.text>(h4+ p(> span+ · + i + xxx))
+
+
+版权区域：
+.footer> wrapper > (.left + right)
+
+.left> (a>img)+p+a.download
+
+.right> dl>(dt+(dd>a)*n)*3
+
+
+vscode快速复制：向下/上复制当当前行 shift+alt+↓/↑
+
+//todo
+
+
+https://www.bilibili.com/video/BV1kM4y127Li?p=96
+学习进度：95/172
 
 
