@@ -815,6 +815,10 @@ index.html  首页Html文件
 
 link标签引入css文件
 
+通栏：宽度于浏览器窗口相同的盒子
+
+通栏>版心>logo+导航+搜索+用户
+
 logo功能：
 1.单击跳转到首页
 2.搜索引擎优化：提升网站百度搜索排名
@@ -893,6 +897,10 @@ li>a>.pic+.text
 vscode快速复制：向下/上复制当当前行 shift+alt+↓/↑
 
 //todo
+
+资源参考：
+https://mrzym.gitee.io/webpage/xuechengzaixian/study.html
+http://itxinfei.gitee.io/xuecheng-parent/#
 
 
 https://www.bilibili.com/video/BV1kM4y127Li?p=96
