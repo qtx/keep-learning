@@ -898,12 +898,31 @@ vscode快速复制：向下/上复制当当前行 shift+alt+↓/↑
 
 
 
-
-
-
 资源参考：
 https://mrzym.gitee.io/webpage/xuechengzaixian/study.html
 http://itxinfei.gitee.io/xuecheng-parent/#
+
+素材下载地址-pink老师
+各位童鞋好，这里把一些素材的地址总结下，同学们可以下载了， 不要只看视频，也要多写多练习哦！
+
+HTML5+CSS3+品优购项目素材地址：  https://gitee.com/xiaoqiang001/html_css_material.git
+
+移动端素材：  flex布局  rem布局   流式布局 
+
+地址：  https://gitee.com/xiaoqiang001/mobile.git
+
+响应式布局(bootstrap)： https://gitee.com/xiaoqiang001/bootstrap.git
+
+js 基础 素材下载地址： https://gitee.com/xiaoqiang001/jsjichuanlisucai.git
+
+WEB api 素材下载地址： https://gitee.com/xiaoqiang001/jsapis_material.git
+
+jQuery 下载地址： https://gitee.com/xiaoqiang001/jquery.git  
+
+JS高级的下载地址： https://gitee.com/xiaoqiang001/js_advanced_material.git
+
+ 作者：黑马pink讲前端 https://www.bilibili.com/read/cv4085360 出处：bilibili
+
 
 
 https://www.bilibili.com/video/BV1kM4y127Li?p=96
