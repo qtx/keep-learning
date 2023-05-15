@@ -897,6 +897,9 @@ li>a>.pic+.text
 vscode快速复制：向下/上复制当当前行 shift+alt+↓/↑
 
 
+明天：早起学习
+
+
 
 资源参考：
 https://mrzym.gitee.io/webpage/xuechengzaixian/study.html
